@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Food from '../components/Food.vue'
 import Hotel from '../components/Hotel.vue'
+import Sweet from '../components/Sweet.vue'
+import Todolist from '../components/Todolist.vue'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 
@@ -24,6 +26,16 @@ const routes = [
     path: '/KHhotel',
     name: 'Hotel',
     component: Hotel
+  },
+  {
+    path: '/dessert',
+    name: 'dessert',
+    component: Sweet
+  },
+  {
+    path: '/todolist',
+    name: 'todolist',
+    component: Todolist
   },
   {
     path: '/about',
