@@ -3,6 +3,10 @@
     <img alt="Vue logo" src="../assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
       <router-link to="/todolist">todolist</router-link>
+      <br>
+      <router-link to="/food">ex-food</router-link>
+      <br>
+      <router-link to="/youtube">yt-pr</router-link>
   </div>
 </template>
 

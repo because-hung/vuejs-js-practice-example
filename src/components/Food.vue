@@ -1,7 +1,6 @@
 <template>
   <div>
-
-    <test v-if="status"></test>
+    <test :msg="status"></test>
     <h2 class="my-3">期末成績</h2>
     <ul v-for="(item, i) in sub" :key="i">
       <li class="h2">{{item.name}}:{{item.score}} *
@@ -14,6 +13,7 @@
    <input type="text" v-model="txt">
    <br>
    <span>{{txt}}</span>
+   <inter></inter>
     <!-- <h2>好好吃攤位</h2>
     <ul v-for="(item, i) in foods" :key="i">
       <li>
@@ -32,6 +32,7 @@
 
 <script>
 import test from './test'
+import inter from './inter'
 export default {
   data () {
     return {
@@ -62,7 +63,8 @@ export default {
     }
   },
   components: {
-    test
+    test,
+    inter
   },
   methods: {
     PlusScore () {

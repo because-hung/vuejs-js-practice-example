@@ -9,7 +9,7 @@
   <p>Time:</p>
 <input type="time" v-model="Time">
 
-<button @click="addTodo">enter</button>
+<button @click="addTodo()">enter</button>
     </div>
 
 <div class="item">

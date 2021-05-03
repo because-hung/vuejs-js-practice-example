@@ -5,6 +5,7 @@ import Food from '../components/Food.vue'
 import Hotel from '../components/Hotel.vue'
 import Sweet from '../components/Sweet.vue'
 import Todolist from '../components/Todolist.vue'
+import Youtube from '../components/Youtube.vue'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
 
@@ -36,6 +37,11 @@ const routes = [
     path: '/todolist',
     name: 'todolist',
     component: Todolist
+  },
+  {
+    path: '/youtube',
+    name: 'youtube',
+    component: Youtube
   },
   {
     path: '/about',
